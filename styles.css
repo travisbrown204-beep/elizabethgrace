@@ -501,9 +501,23 @@ footer {
   .section-header { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 
-/* Tablet: stack nav into two clean rows so links and the
-   Book a Consultation button never wrap or overlap. */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* ─── NAV TOGGLE (hamburger) ──────────────────── */
+.nav-toggle {
+  display: none;
+  flex-direction: column; justify-content: center; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 8px;
+  flex-shrink: 0;
+}
+.nav-toggle span {
+  display: block; width: 22px; height: 1.5px;
+  background: var(--charcoal); transition: transform 0.2s, opacity 0.2s;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Tablet (768px–1024px): stack nav into two rows */
+@media (min-width: 768px) and (max-width: 1024px) {
   nav {
     position: static;
     flex-direction: column;
@@ -520,4 +534,59 @@ footer {
   }
   .page-top { margin-top: 0; }
   .hero { height: auto; min-height: 560px; }
+}
+
+/* Mobile (max 767px): hamburger menu + layout */
+@media (max-width: 767px) {
+  nav {
+    padding: 0 20px;
+    height: 60px;
+  }
+  .page-top { margin-top: 60px; }
+  .hero { min-height: 0; }
+  .nav-toggle { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed; top: 60px; left: 0; right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 0 20px 20px;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    z-index: 199;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li { border-bottom: 1px solid var(--border); }
+  .nav-links a { display: block; padding: 14px 0; }
+  .nav-links .nav-book {
+    display: block; margin-top: 8px; text-align: center;
+    padding: 12px 20px !important; white-space: normal;
+  }
+  /* Heading scale-downs */
+  .hero-name { font-size: 48px; }
+  .section-header h2 { font-size: 28px; }
+  .about-text h2 { font-size: 28px; }
+  .womens-text h2 { font-size: 28px; }
+  .cta-band h2 { font-size: 30px; }
+  .contact-left h2 { font-size: 28px; }
+  .interior-body h2 { font-size: 26px; }
+  .faq-section h2 { font-size: 26px; }
+  /* How-grid: 1 column on mobile (overrides 900px 1fr 1fr) */
+  .how-grid { grid-template-columns: 1fr; gap: 28px; }
+  /* Tighten paddings */
+  .cta-band { padding: 56px 20px; }
+  .statement-band { padding: 56px 20px; }
+  .page-header { padding: 48px 20px 40px; }
+  .areas { padding: 56px 20px; }
+  .how { padding: 56px 20px; }
+  .fees-section { padding: 56px 20px; }
+  .faq-section { padding: 0 20px 56px; }
+  .interior-body { padding: 56px 20px; }
+  .two-col { padding: 56px 20px; }
+  .womens-text { padding: 56px 20px; }
+  .womens-panel { padding: 56px 20px; }
+  .contact-left { padding: 56px 20px; }
+  .contact-right { padding: 56px 20px; }
+  footer { padding: 40px 20px 0; }
 }
