@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -32,8 +32,36 @@
 
   <section class="contact-section">
     <div class="contact-left">
-      <div class="eyebrow">How to Reach Me</div>
+      <div class="eyebrow">Send a Message</div>
       <h2>Let&rsquo;s start<br>a <em>conversation</em></h2>
+
+      <form action="https://formspree.io/f/mdaryqgk" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="https://www.elizabethgracetherapy.uk/contact.html">
+
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="What&rsquo;s brought you here&hellip;" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-fill" style="font-size:11px; padding:15px 36px; border:none; cursor:pointer;">Send Message</button>
+      </form>
+    </div>
+    <div class="contact-right">
+      <p class="panel-quote">&ldquo;The first step is often just saying: I think I need some support.&rdquo;</p>
+      <p>You don&rsquo;t need to arrive with a clear sense of what you want from therapy. You don&rsquo;t need to have the right words. You just need to reach out, and we&rsquo;ll take it from there.</p>
+      <br>
+      <p>I respond to all enquiries personally. Your message will be kept confidential.</p>
+      <br>
       <div class="contact-detail">
         <div class="contact-item">
           <span class="contact-item-label">Email</span>
@@ -52,13 +80,6 @@
           <span class="contact-item-value">20 minutes, no obligation</span>
         </div>
       </div>
-      <a href="mailto:hello@elizabethgracetherapy.uk" class="btn-fill">Send a Message</a>
-    </div>
-    <div class="contact-right">
-      <p class="panel-quote">&ldquo;The first step is often just saying: I think I need some support.&rdquo;</p>
-      <p>You don&rsquo;t need to arrive with a clear sense of what you want from therapy. You don&rsquo;t need to have the right words. You just need to reach out, and we&rsquo;ll take it from there.</p>
-      <br>
-      <p>I respond to all enquiries personally. Your message will be kept confidential.</p>
     </div>
   </section>
 
@@ -97,7 +118,6 @@
     <div>
       <div class="footer-heading">Navigation</div>
       <ul class="footer-links">
-        <li><a href="about.html">About</a></li>
         <li><a href="how-i-work.html">How I Work</a></li>
         <li><a href="areas.html">Areas I Support</a></li>
         <li><a href="womens-health.html">Women&rsquo;s Health</a></li>

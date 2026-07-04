@@ -354,6 +354,29 @@ nav {
   font-size: 13px; line-height: 1.8; color: rgba(255,255,255,0.58); font-weight: 300;
 }
 
+/* ─── CONTACT FORM ────────────────────────────── */
+.contact-form { margin-top: 40px; display: flex; flex-direction: column; gap: 24px; }
+.form-field { display: flex; flex-direction: column; gap: 8px; }
+.form-field label {
+  font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--light); font-weight: 400;
+}
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  font-family: 'Jost', sans-serif; font-size: 14px; font-weight: 300;
+  color: var(--charcoal); background: var(--white);
+  border: 1px solid var(--border); border-radius: 0;
+  padding: 14px 16px; outline: none;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: var(--light); }
+.form-field input:focus,
+.form-field textarea:focus { border-color: var(--green); }
+.form-field textarea { resize: vertical; min-height: 140px; line-height: 1.7; }
+
 /* ─── INTERIOR PAGE BODY ──────────────────────── */
 .interior-body { padding: 80px 64px; }
 .interior-body h2 {
