@@ -215,6 +215,9 @@ nav {
   font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
   padding: 7px 16px; font-weight: 400;
 }
+a.tag { text-decoration: none; transition: background 0.2s, color 0.2s; }
+a.tag:hover { background: var(--green); color: var(--white); }
+.eyebrow[id] { scroll-margin-top: 108px; }
 .womens-panel {
   background: var(--green); padding: 90px 52px;
   display: flex; flex-direction: column; justify-content: center;
