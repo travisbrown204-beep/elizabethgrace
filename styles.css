@@ -487,6 +487,8 @@ footer {
   padding: 20px 0; display: flex; justify-content: space-between; align-items: center;
 }
 .footer-bottom span { font-size: 11px; color: rgba(255,255,255,0.22); font-weight: 300; }
+.footer-bottom a { color: rgba(255,255,255,0.22); text-decoration: none; }
+.footer-bottom a:hover { color: rgba(255,255,255,0.55); }
 .bacp-pill {
   font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--green); border: 1px solid rgba(61,90,71,0.5); padding: 5px 14px;
