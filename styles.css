@@ -14,7 +14,7 @@
   --border: rgba(30,30,27,0.09);
 }
 
-body { font-family: 'Jost', sans-serif; background: var(--white); color: var(--charcoal); }
+body { font-family: 'Jost', sans-serif; background: var(--white); color: var(--charcoal); font-size: 18px; line-height: 1.75; }
 
 /* ─── NAV ─────────────────────────────────────── */
 nav {
@@ -171,8 +171,8 @@ nav {
 }
 .about-text h2 em { font-style: italic; color: var(--green); }
 .about-text p {
-  font-size: 16px; line-height: 1.88; color: var(--mid);
-  font-weight: 300; margin-bottom: 18px; max-width: 480px;
+  font-size: 18px; line-height: 1.78; color: var(--mid);
+  font-weight: 300; margin-bottom: 18px; max-width: 500px;
 }
 
 /* ─── AREAS ───────────────────────────────────── */
@@ -192,7 +192,7 @@ nav {
   font-family: 'Cormorant Garamond', serif; font-size: 22px;
   font-weight: 400; color: var(--charcoal); margin-bottom: 14px;
 }
-.area-desc { font-size: 16px; line-height: 1.78; color: var(--mid); font-weight: 300; }
+.area-desc { font-size: 18px; line-height: 1.72; color: var(--mid); font-weight: 300; }
 
 /* ─── WOMEN'S HEALTH ──────────────────────────── */
 .womens {
@@ -206,7 +206,7 @@ nav {
 }
 .womens-text h2 em { font-style: italic; color: var(--green); }
 .womens-text p {
-  font-size: 16px; line-height: 1.88; color: var(--mid);
+  font-size: 18px; line-height: 1.78; color: var(--mid);
   font-weight: 300; margin-bottom: 32px; max-width: 520px;
 }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
@@ -229,7 +229,7 @@ a.tag:hover { background: var(--green); color: var(--white); }
 }
 .womens-panel .panel-quote { font-size: 26px; }
 .womens-panel p {
-  font-size: 17px; line-height: 1.8; color: rgba(255,255,255,0.58); font-weight: 300;
+  font-size: 18px; line-height: 1.72; color: rgba(255,255,255,0.58); font-weight: 300;
 }
 
 /* ─── HOW I WORK ──────────────────────────────── */
@@ -251,7 +251,7 @@ a.tag:hover { background: var(--green); color: var(--white); }
   font-family: 'Cormorant Garamond', serif; font-size: 22px;
   font-weight: 400; color: var(--charcoal); margin-bottom: 12px;
 }
-.how-desc { font-size: 16px; line-height: 1.75; color: var(--mid); font-weight: 300; }
+.how-desc { font-size: 18px; line-height: 1.72; color: var(--mid); font-weight: 300; }
 
 /* ─── CTA BAND ────────────────────────────────── */
 .cta-band {
@@ -280,8 +280,8 @@ a.tag:hover { background: var(--green); color: var(--white); }
 }
 .page-header h1 em { font-style: italic; color: var(--green); }
 .page-header p {
-  font-size: 15px; line-height: 1.85; color: var(--mid);
-  font-weight: 300; max-width: 560px; margin-top: 28px;
+  font-size: 18px; line-height: 1.72; color: var(--mid);
+  font-weight: 300; max-width: 580px; margin-top: 28px;
 }
 
 /* ─── FEES ────────────────────────────────────── */
@@ -317,9 +317,9 @@ a.tag:hover { background: var(--green); color: var(--white); }
 }
 .faq-item { border-bottom: 1px solid var(--border); padding: 28px 0; }
 .faq-q {
-  font-size: 15px; font-weight: 400; color: var(--charcoal); margin-bottom: 12px;
+  font-size: 18px; font-weight: 400; color: var(--charcoal); margin-bottom: 12px;
 }
-.faq-a { font-size: 13.5px; line-height: 1.8; color: var(--mid); font-weight: 300; }
+.faq-a { font-size: 18px; line-height: 1.72; color: var(--mid); font-weight: 300; }
 
 /* ─── CONTACT ─────────────────────────────────── */
 .contact-section {
@@ -342,7 +342,7 @@ a.tag:hover { background: var(--green); color: var(--white); }
   color: var(--light); font-weight: 400;
 }
 .contact-item-value {
-  font-size: 15px; color: var(--charcoal); font-weight: 300;
+  font-size: 18px; color: var(--charcoal); font-weight: 300;
 }
 .contact-item-value a {
   color: var(--green); text-decoration: none;
@@ -354,7 +354,7 @@ a.tag:hover { background: var(--green); color: var(--white); }
 }
 .contact-right p.panel-quote { margin-bottom: 32px; }
 .contact-right p {
-  font-size: 13px; line-height: 1.8; color: rgba(255,255,255,0.58); font-weight: 300;
+  font-size: 17px; line-height: 1.72; color: rgba(255,255,255,0.58); font-weight: 300;
 }
 
 /* ─── CONTACT FORM ────────────────────────────── */
@@ -390,8 +390,8 @@ a.tag:hover { background: var(--green); color: var(--white); }
 .interior-body h2:first-child { margin-top: 0; }
 .interior-body h2 em { font-style: italic; color: var(--green); }
 .interior-body p {
-  font-size: 14.5px; line-height: 1.9; color: var(--mid);
-  font-weight: 300; max-width: 680px; margin-bottom: 18px;
+  font-size: 18px; line-height: 1.75; color: var(--mid);
+  font-weight: 300; max-width: 660px; margin-bottom: 20px;
 }
 .interior-body .eyebrow { margin-bottom: 16px; margin-top: 56px; }
 .interior-body .eyebrow:first-child { margin-top: 0; }
@@ -406,7 +406,7 @@ a.tag:hover { background: var(--green); color: var(--white); }
   font-family: 'Cormorant Garamond', serif; font-size: 26px;
   font-weight: 400; color: var(--charcoal); margin-bottom: 18px;
 }
-.two-col p { font-size: 13.5px; line-height: 1.82; color: var(--mid); font-weight: 300; margin-bottom: 14px; }
+.two-col p { font-size: 17px; line-height: 1.72; color: var(--mid); font-weight: 300; margin-bottom: 14px; }
 
 /* ─── STATEMENT BAND ──────────────────────────── */
 .statement-band {
@@ -445,7 +445,7 @@ a.tag:hover { background: var(--green); color: var(--white); }
   font-weight: 400; color: var(--charcoal); line-height: 1.2; margin-bottom: 14px;
 }
 .blog-excerpt {
-  font-size: 16px; line-height: 1.78; color: var(--mid);
+  font-size: 18px; line-height: 1.72; color: var(--mid);
   font-weight: 300; margin-bottom: 22px; flex-grow: 1;
 }
 
